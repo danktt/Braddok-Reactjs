@@ -1,9 +1,9 @@
-import Logo from "../../assets/logo-helpdesk.png";
 
-import { FiLogOut } from 'react-icons/fi'
-import { BsFillGearFill } from 'react-icons/bs'
-
-
+import { FiLogOut } from 'react-icons/fi';
+import { BsFillGearFill } from 'react-icons/bs';
+import { BsPersonCheckFill } from 'react-icons/bs';
+import { FaUserLock } from 'react-icons/fa';
+import { MdManageAccounts } from 'react-icons/md'
 import './styles.css';
 
 
@@ -14,7 +14,7 @@ function Navbar(props) {
       <nav className="navbar navbar-expand-lg navbar-light bg-primary" id="container">
         <a className="navbar-brand" href="/helpdesk">
           <img
-            src={Logo}
+            src={props.icon}
             width="30"
             height="30"
             className="d-inline-block align-top"
@@ -37,29 +37,35 @@ function Navbar(props) {
           <ul className="navbar-nav ">
 
           <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="/helpdesk"
+              <div
+                className="nav-link"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-              >
-                GEN MIRANDA
-              </a>
+                >
+                 <span>Adminstrator</span>
+
+                 <p className="dropdown-toggle" >
+                   GEN MIRANDA
+                </p> 
+             </div>
               <div
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <a className="dropdown-item" href="/helpdesk">
-                  Atualizar Dados
+                  <BsPersonCheckFill />
+                   Atualizar Dados
                 </a>
                 <a className="dropdown-item" href="/helpdesk">
-                  Atualizar Senha
+                 <FaUserLock />
+                   Atualizar Senha
                 </a>
                 <a className="dropdown-item" href="/helpdesk">
-                  Adminstrar Usúario
+                  <MdManageAccounts />
+                   Adminstrar Usúario
                 </a>
               </div>
             </li>
@@ -70,7 +76,7 @@ function Navbar(props) {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/helpdesk" id="icon">
+              <a className="nav-link" href="http://localhost/sistemas/"  id="icon">
                 <BsFillGearFill />
               </a>
             </li>
