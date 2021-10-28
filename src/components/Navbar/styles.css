@@ -1,0 +1,23 @@
+
+
+#container{
+  padding: .6rem;
+}
+
+.navbar-nav{
+  margin-left: auto;
+}
+
+
+#navbarNavDropdown > ul{
+  display: flex;
+
+  align-items: center;
+}
+
+
+#icon{
+
+  font-size: 1.3rem;
+
+}
