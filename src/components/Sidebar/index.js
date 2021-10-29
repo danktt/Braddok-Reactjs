@@ -1,34 +1,27 @@
+import { useState } from "react";
 import './styles.css'
 
-function Sidebar() {
+export default function Sidebar(props) {
+    const [sideNav, setSideNav] = useState(0);
 
-  function handleClick(){
-    window.addEventListener('DOMContentLoaded', event => {
+    const handleClick = (e) => {
+        e.target.innerHTML = 'Movendo..';
+        if (sideNav === 0) {
+            setSideNav(1);
+            document.body.classList.add("sb-sidenav-toggled")
+            setTimeout(function(){ e.target.innerHTML = 'Abrir'; }, 200);
+        } else {
+            setSideNav(0);
+            document.body.classList.remove("sb-sidenav-toggled")
+            setTimeout(function(){ e.target.innerHTML = 'Fechar'; }, 200);
+        }
+    };
 
-      // Toggle the side navigation
-      const sidebarToggle = document.body.querySelector('#sidebarToggle');
-      if (sidebarToggle) {
-          // Uncomment Below to persist sidebar toggle between refreshes
-          // if (localStorage.getItem('sb|sidebar-toggle') === 'true') {
-          //     document.body.classList.toggle('sb-sidenav-toggled');
-          // }
-          sidebarToggle.addEventListener('click', event => {
-              event.preventDefault();
-              document.body.classList.toggle('sb-sidenav-toggled');
-              localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
-          });
-      }
-  
-  });
-  }
-
-
-
-  return ( 
+  return (
     <>
-    <div className="d-flex" id="wrapper">
+        <div className="d-flex" id="wrapper">
             {/* <!-- Sidebar--> */}
-            <div className="border-end bg-white" id="sidebar-wrapper">
+            <div className={`border-end bg-white`} id="sidebar-wrapper">
                 <div className="sidebar-heading border-bottom bg-secondary">Start Bootstrap</div>
                 <div className="list-group list-group-flush">
                     <a className="list-group-item list-group-item-action list-group-item-light p-3 text-light bg-secondary" href="#!">Página Principal</a>
@@ -50,7 +43,7 @@ function Sidebar() {
                 {/* <!-- Top navigation--> */}
                 <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                     <div className="container-fluid">
-                        <button className="btn btn-primary" id="sidebarToggle" onClick={handleClick()}>Toggle Menu</button>
+                        <button className="btn btn-primary" id="sidebarToggle" onClick={handleClick}>Fechar</button>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                         
                     </div>
@@ -62,8 +55,6 @@ function Sidebar() {
                 </div>
             </div>
         </div>
-</>
+    </>
    );
 }
-
-export default Sidebar;
