@@ -10,6 +10,7 @@ import StoreProvider from "./components/Store/Provider";
 import RoutesPrivate from "./components/Routes/Private/Private";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <StoreProvider>
         <Switch>
           <Route exact path="/" component={Signin}></Route>
+          <Route exact path="/home" component={Home}></Route>
           <RoutesPrivate path="/guarda" component={Guarda}></RoutesPrivate>
           <RoutesPrivate path="/helpdesk" component={HelpDesk}></RoutesPrivate>
           <RoutesPrivate path="/fatos-obs" component={FatosObs}></RoutesPrivate>

@@ -1,51 +1,51 @@
 // import { IoMdKey, IoMdPerson } from "react-icons/io";
 // import styles from '../Signin/styles.module.scss';
-import { useContext, useState } from "react";
-import { useHistory } from "react-router-dom";
-import StoreContext from "../Store/Context"
+// import { useContext, useState } from "react";
+// import { useHistory } from "react-router-dom";
+// import StoreContext from "../Store/Context"
 import "./styles.css";
 
 
 
-  function initialState() {
-    return { user: '', password: '' };
-  }
+  // function initialState() {
+  //   return { user: '', password: '' };
+  // }
 
 
-  function login({ user, password }) {
-    if(user === 'admin' && password === 'admin'){
-      return { token: '123'};
-    }
-    return { error: 'Usuario ou senha invado'}
-  }
+  // function login({ user, password }) {
+  //   if(user === 'admin' && password === 'admin'){
+  //     return { token: '123'};
+  //   }
+  //   return { error: 'Usuario ou senha invado'}
+  // }
 
 
 
 const Signin = (props) => {
-  const [values, setValues] = useState(initialState);
-  const { setToken } = useContext(StoreContext)
-  const history = useHistory()
+  // const [values, setValues] = useState(initialState);
+  // const { setToken } = useContext(StoreContext)
+  // const history = useHistory()
 
-  function onChange(event) {
-    const { value, name } = event.target;
+  // function onChange(event) {
+  //   const { value, name } = event.target;
 
-    setValues({
-      ...values,
-      [name]: value
-    });
-  }
+  //   setValues({
+  //     ...values,
+  //     [name]: value
+  //   });
+  // }
 
 
-  function onSubmit(event) {
-    event.preventDefault();
+  // function onSubmit(event) {
+  //   event.preventDefault();
 
-    const { token } = login(values);    
-      if(token){
-        setToken(token);
-        return history.push('/helpdesk');
-      }
-      setValues(initialState);
-  }
+  //   const { token } = login(values);    
+  //     if(token){
+  //       setToken(token);
+  //       return history.push('/helpdesk');
+  //     }
+  //     setValues(initialState);
+  // }
 
 
 
@@ -54,7 +54,7 @@ const Signin = (props) => {
   return (
     <>
       <div id="content">
-        <form className="form-signin" onSubmit={onSubmit} >
+        <form className="form-signin"  >
           <img
             className="mb-4"
             src="https://cdn6.campograndenews.com.br/uploads/noticias/2021/08/20/3bsg011ghcaos.jpg"
@@ -69,8 +69,8 @@ const Signin = (props) => {
             type="text"
             id="user"
             name="user"
-            onChange={onChange}
-            value={values.user}
+            // onChange={onChange}
+            // value={values.user}
             className="form-control mb-1"
             placeholder="Identidade"
             required
@@ -81,8 +81,8 @@ const Signin = (props) => {
             type="password"
             id="password"
             name="password"
-            onChange={onChange}
-            value={values.password}
+            // onChange={onChange}
+            // value={values.password}
             className="form-control"
             placeholder="Senha"
             required
@@ -95,7 +95,7 @@ const Signin = (props) => {
           <p className="mt-5 mb-3 text-muted">
             Seção de Tecnologia da Informação - RITEX: 892-2031
           </p>
-          <a href="http:/helpdesk "> help</a>
+          <a href="http:/home "> help</a>
         </form>
       </div>
     </>

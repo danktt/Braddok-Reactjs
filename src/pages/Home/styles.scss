@@ -1,0 +1,130 @@
+a,
+a:focus {
+  text-decoration: none;
+ 
+}
+
+
+.Container {
+  height: 100vh;
+  // background: #151515;
+  // background: #003964;
+  background: url(../../assets/wallpaperBraddok.jpg);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  h1{ 
+    text-align: center;
+    padding-bottom: 1rem;  
+    text-transform: uppercase;
+    color: #e9ebf8;
+
+  }
+
+
+  .Contant{
+    max-width: 1200px;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+
+
+    .service-box {
+      max-width: 33.33%;
+      padding: 25px;
+      // text-align: center;
+
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      
+      a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+      }
+      
+
+
+      .service-icon {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        
+        
+        
+        margin-bottom: 40px;
+        margin-top: 16px;
+
+        svg{
+          height: 3rem;
+          width: 4rem;
+          
+        }
+ 
+      }
+
+      .container-icon{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        transition: .5s;
+        
+        &:hover {
+          color: #fefffe;
+        }
+      }
+
+
+      .service-title {
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        
+        
+      }
+
+      .service-desc {
+        font-size: .8rem;
+        font-weight: bold;
+        text-align: center;
+        
+      }
+
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 960px) {
+    .serviceBox {
+      max-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .serviceBox {
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .serviceBox {
+      max-width: 100%;
+    }
+  }
+}
