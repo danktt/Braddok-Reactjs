@@ -3,16 +3,17 @@ a:focus {
   text-decoration: none;
 }
 
-body {
-  background: #03161D ;
-}
+// body {
+//   // background: #03161D ;
+// }
 
 .Container {
   height: 100vh;
   // background: #151515;
   // background: #003964;
   background: url(../../assets/wallpaper7.png) no-repeat center center;
-  
+  // background-attachment: fixed;
+  background-size: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
