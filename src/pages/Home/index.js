@@ -13,11 +13,14 @@ import {
 } from "react-icons/fa";
 import { GiForkKnifeSpoon } from "react-icons/gi";
 import { IoHelpBuoy } from "react-icons/io5";
+import { TiArrowBack } from "react-icons/ti"
 
 function Home() {
   return (
     <div className="Container">
       <h1>Sistemas Braddok</h1>
+      <p class="section-subtitle">3ª Bia AAAe</p>
+
       <div className="Contant">
         <div className="service-box">
           <a href="/aniversariantes">
@@ -46,7 +49,7 @@ function Home() {
               <div className="service-desc">
                 O arranchamento online permite que o usuário se arranche e veja
                 o cardápio, ao furriel possibilita que o mesmo arranche
-                militares de sua fração e o aprovisionador é capaz de imprimir
+                militares de sua função. O aprovisionador é capaz de imprimir
                 arranchamento e lançar cardápio.
               </div>
             </div>
@@ -80,7 +83,7 @@ function Home() {
             <div className="container-icon">
               <div className="service-title">HelpDesk</div>
               <div className="service-desc">
-                Este é um serviço de atendimento ao usuário que procuram
+                Este é um serviço de atendimento aos usuários que procuram
                 soluções de TI, como por exemplo: acesso a internet e intranet,
                 suporte e manutenção de ativos de rede, instalação de
                 impressoras entre outros.
@@ -115,7 +118,7 @@ function Home() {
             <div className="container-icon">
               <div className="service-title">Fatos Observados</div>
               <div className="service-desc">
-                O sistema de Fatos Observados foi criado para que o Oficiais,
+                O sistema de Fatos Observados foi criado para que os Oficiais,
                 Subtenentes e Sargentos possam lançar observações dos Cabos e
                 Soldados.
               </div>
@@ -123,6 +126,10 @@ function Home() {
           </a>
         </div>
       </div>
+        <a href="/">
+          <TiArrowBack />
+          Retornar para Intranet
+        </a>
     </div>
   );
 }

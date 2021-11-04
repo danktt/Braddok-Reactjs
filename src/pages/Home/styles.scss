@@ -1,38 +1,71 @@
 a,
 a:focus {
   text-decoration: none;
- 
 }
 
+body {
+  background: #03161D ;
+}
 
 .Container {
   height: 100vh;
   // background: #151515;
   // background: #003964;
-  background: url(../../assets/wallpaperBraddok.jpg);
-
+  background: url(../../assets/wallpaper7.png) no-repeat center center;
+  
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
-  h1{ 
+  
+  h1 {
     text-align: center;
-    padding-bottom: 1rem;  
+    // padding-bottom: 1rem;
     text-transform: uppercase;
-    color: #e9ebf8;
+    color: #fff;
 
+    transition: 0.5s;
+    &:hover {
+      color: #17c3b2;
+      font-size: 3rem;
+    }
   }
 
+  a {
+    color: #fff;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s;
 
-  .Contant{
+    svg{
+      font-size: 1.8rem;
+      margin-right: .2rem;
+    }
+    &:hover{
+      filter: brightness(.9);
+      color: #139285;
+    }
+  }
+
+  
+  .section-subtitle {
+    font-size: 2rem;
+    color: #139285;
+    font-weight: bold;
+  }
+
+  
+
+  .Contant {
     max-width: 1200px;
     width: 100%;
 
     display: flex;
     flex-wrap: wrap;
     // justify-content: center;
-
 
     .service-box {
       max-width: 33.33%;
@@ -42,86 +75,97 @@ a:focus {
       // display: flex;
       // justify-content: center;
       // align-items: center;
-      
-      a{
+
+      a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
       }
-      
-
 
       .service-icon {
-        border: 1px solid #fff;
+        border: 4px solid #ffCB05;
         border-radius: 50%;
-        display: inline-block;
+        // display: inline-block;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 80px;
         height: 80px;
-        
-        
-        
-        margin-bottom: 40px;
-        margin-top: 16px;
 
-        svg{
+        margin-bottom: 1rem;
+        margin-top: 16px;
+        transition: .5s;
+        svg {
           height: 3rem;
           width: 4rem;
-          
+          margin-left: .2rem;
+          color: #ffCB05;
         }
- 
+
+        &:hover {
+          background-color: #ffCB05;
+
+          svg{
+            height: 3rem;
+            width: 4rem;
+           color: #151515;
+          }
+        }
       }
 
-      .container-icon{
+      .container-icon {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
 
-        transition: .5s;
-        
+        transition: 0.5s;
+
         &:hover {
           color: #fefffe;
+          font-size: 5rem;
         }
       }
 
-
       .service-title {
-        font-size: 22px;
+        font-size: 25px;
         text-transform: uppercase;
         margin-bottom: 10px;
-        
-        
+        font-weight: bold;
+        transition: .5s;
+        color: #e4dede;
+        &:hover {
+         font-size: 1.7rem;
+        }
       }
 
       .service-desc {
-        font-size: .8rem;
+        font-size: 1rem;
         font-weight: bold;
         text-align: center;
-        
-      }
+        color: #0b8a7d;
 
+        transition: 0.5s;
+        &:hover {
+          color: #ffCB05;
+        }
+      }
     }
   }
-
-
-
 
   @media screen and (max-width: 960px) {
     .serviceBox {
       max-width: 45%;
     }
   }
-  
+
   @media screen and (max-width: 768px) {
     .serviceBox {
       max-width: 50%;
     }
   }
-  
+
   @media screen and (max-width: 480px) {
     .serviceBox {
       max-width: 100%;
