@@ -1,6 +1,10 @@
 
+
+
+
 /********* CONTAINER *********/
 #container{
+  position: relative;
   padding: 0 .6rem;
   /* height: 3.5rem; */
   

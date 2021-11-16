@@ -21,6 +21,13 @@ function Sidebar() {
         <div id="sidebar-wrapper">
           <div className="sidebar-heading border-bottom bg-secondary">
             Start Bootstrap
+            <button
+                className="btn btn-primary"
+                id="sidebarToggle"
+                onClick={show(!setIsOpen)}
+              >
+                click
+              </button>
           </div>
           <div className="list-group list-group-flush">
             <a
@@ -98,37 +105,7 @@ function Sidebar() {
           </div>
         </div>
         {/* <!-- Page content wrapper--> */}
-        <div id="page-content-wrapper">
-          {/* <!-- Top navigation--> */}
-          <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-            <div className="container-fluid">
-              <button
-                className="btn btn-primary"
-                id="sidebarToggle"
-                onClick={show(!setIsOpen)}
-              >
-                click
-              </button>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-
-            </div>
-          </nav>
-          {/* <!-- Page content--> */}
-          <div className="container-fluid">
-            <h1 className="mt-4">Conteudo </h1>
-            <p> test</p>
-          </div>
-        </div>
+        
 
       </div>
     </>

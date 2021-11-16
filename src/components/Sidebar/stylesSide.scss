@@ -1,0 +1,82 @@
+#header {
+  position: absolute;
+  width: 270px;
+}
+#header .pro-sidebar {
+  height: 100vh;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
+  font-size: 1rem;
+  
+  color: #4173C3;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 4px 1px;
+}
+
+#header .closemenu {
+  color: #000;
+  /* position: absolute; */
+  right: 0;
+  // z-index: 9999;
+  line-height: 22px;
+  // border-radius: 50%;
+  font-weight: bold;
+  font-size: 29px;
+  top: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+
+#header .pro-sidebar {
+  width: 100%;
+  min-width: 100%;
+}
+#header .pro-sidebar.collapsed {
+  width: 80px;
+  min-width: 80px;
+}
+#header .pro-sidebar-inner {
+  background-color: #272626;
+  box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+}
+#header .pro-sidebar-inner .pro-sidebar-layout {
+  overflow-y: hidden;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout ul {
+  padding: 0 5px;
+}
+
+/* #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
+  color: #000;
+  margin: 10px 0px;
+  font-weight: bold;
+} */
+
+/* #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
+  background-color: #fbf4cd;
+  color: #000;
+  border-radius: 3px;
+} */
+
+#header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper .pro-item-content {
+  color: #000;
+}
+ #header .pro-sidebar-inner .pro-sidebar-layout .active {
+  background: #4173C3;
+ }
+#header .logo {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+  html {
+    overflow: hidden;
+  }
+}
