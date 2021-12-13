@@ -3,11 +3,38 @@ import Logo from '../../assets/logo-plano-chamada.png'
 
 function PlanoChamadas() {
   return ( 
-    <Navbar 
-    title="Plano de Chamadas"
-    icon={Logo}
-    />
+    <> 
+    <header className="fixed-top ">
+      <Navbar 
+      title="Plano de Chamadas"
+      icon={Logo}
+      />
+    </header>
 
+    <body>
+    <h1>
+        Coteudo
+      </h1> <h1>
+        Coteudo
+      </h1> <h1>
+        Coteudo
+      </h1> <h1>
+        Coteudo
+      </h1> <h1>
+        Coteudo
+      </h1> <h1>
+        Coteudo
+      </h1> <h1>
+        Coteudo
+      </h1> <h1>
+        Coteudo
+      </h1>
+    </body>
+
+
+
+
+    </>
   );
 }
 

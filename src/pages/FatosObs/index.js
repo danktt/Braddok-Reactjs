@@ -8,7 +8,6 @@ function FatosObs() {
     title="Fatos Observados"
     icon={Logo}
     />
-
   );
 }
 

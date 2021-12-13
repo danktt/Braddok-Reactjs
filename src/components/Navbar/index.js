@@ -11,7 +11,7 @@ function Navbar(props) {
   return (
     <>
     
-      <nav className="navbar navbar-expand-lg navbar-light bg-primary col-12 " id="container">
+      <nav fixed="top" className="navbar navbar-expand-lg navbar-light bg-primary col-12  " id="container">
         <a className="navbar-brand" href="/helpdesk">
           <img
             src={props.icon}

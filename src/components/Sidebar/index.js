@@ -16,7 +16,7 @@ function Sidebar() {
 
   return (
     <>
-      <div className="d-flex" id="wrapper">
+      <div className="d-flex " id="wrapper">
         {/* <!-- Sidebar--> */}
         <div id="sidebar-wrapper">
           <div className="sidebar-heading border-bottom bg-secondary">
@@ -105,7 +105,7 @@ function Sidebar() {
           </div>
         </div>
         {/* <!-- Page content wrapper--> */}
-        
+        <h1>Oi</h1>
 
       </div>
     </>

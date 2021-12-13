@@ -1,7 +1,9 @@
 import Navbar from "../../components/Navbar";
 import Logo from '../../assets/logo-helpdesk.png'
-import Sidebar  from "../../components/Sidebar/index";
-import '../../styles/stylesContets.scss';
+// import Sidebar  from "../../components/Sidebar/index";
+// import '../../styles/stylesContets.scss';
+// import './styles.scss';
+
 
 
 export default function HelpDesk() {
@@ -13,29 +15,19 @@ export default function HelpDesk() {
     icon={Logo}
     />
 
-    
-   
-    <div className="wrapper">
-
-     <Sidebar /> 
-
-
-     <main>
-     <h1>VAMOS LA </h1>
-    <h1>VAMOS LA </h1>
-    <h1>VAMOS LA </h1>
-    <h1>VAMOS LA </h1>
-    <h1>VAMOS LA </h1>
-    <h1>VAMOS LA </h1>
-    <h1>VAMOS LA </h1>
-
-     </main> 
-
-    </div> 
-
-
-    </>
+ <div className="container bg-secondary">
+  <div class="row">
+    <div class="col">
+      
+     </div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+  </div>
+   </div>
+   </> 
   );
 }
 
 
+ 
